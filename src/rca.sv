@@ -24,8 +24,9 @@ module rca
                     .cout(carry[i])
                 );
             end else begin: gen_gt0
-                                   .a(a[i]),
+                    .a(a[i]),
                     .b(b[i]),
+                .cin(carry),
                     .y(sum[i]),
                     .cout(carry[i])
 
